@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/schoolSel.css">
+	<link rel="stylesheet" href="css/cssRest.css">
+</head>
+<body>
+<input type="text" id="sch">
+	<!-- =====选择学校========= -->
+	<div id="bodyb" class="bodyb" style="z-index: 99; position:relative">
+	     <div class="school_sel" id="school_sel" style="z-index: 100;position:absolute">
+	        <span class="close" id="close">×</span>
+	        <h1>选择学校</h1>
+	        <p>
+	            <select>
+	                <option>中国</option>
+	            </select> 
+	            <select id="citys">
+	            </select>
+	            <input type="text" name="search" id="searchs" placeholder="快速查找学校">
+	        </p>
+	        <div class="hidden" id="txt"></div> 
+	        <div class="school_list">
+	            <ul id="schools_lists">
+	            </ul>
+	            
+	        </div>
+	    </div>
+	</div>
+	<script src="js/ajaxt.js"></script>
+	<script src="js/schoolSel.js"></script>
+</body>
+</html>

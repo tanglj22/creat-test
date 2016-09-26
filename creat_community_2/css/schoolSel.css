@@ -1,0 +1,100 @@
+/* 说明：
+    调整第7,8行和第96行的数值即可 */
+/**********school_select*************/
+.school_sel{
+    position: relative;
+    /* 修改这个top值，控制弹出框的位置 */
+    /* top: 290px; 
+    left:100px;*/
+    width: 650px;
+    height: 450px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    -webkit-box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2) ;
+    -moz-box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2) ;
+    -o-box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2) ;
+    box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2) ;
+}
+.school_sel h1{
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.school_sel .close{
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ .school_sel p{
+    margin: 20px 0 10px 0;
+ }
+ .school_sel p input,.school_sel p select{
+    height: 30px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding-left: 5px;
+ }
+ .school_sel p input{
+    width: 300px;
+ }
+ .school_sel .hidden{
+    position: absolute;
+    left: 249px;
+    top: 110px;
+    width: 305px;
+    height: 250px;
+    overflow-y:auto;
+    z-index: 10;
+    display: none;
+    border: 1px solid #ccc;
+    border-top:none;
+    background-color: white;
+    font-size: 14px;
+ }
+ .item{
+    margin-bottom: 5px;
+    padding-left: 5px;
+    color: #A9A9A9;
+ }
+ .item:hover
+  {
+   background-color: gray;
+   cursor:pointer;
+  }
+ .school_sel p select{
+    width: 100px;
+ }
+ .school_sel li{
+    cursor: pointer;
+ }
+ .school_list{
+    border: 1px solid #ccc;
+    width: 650px;
+    height: 300px;
+    overflow-y: auto;
+ }
+ .school_list ul{
+    list-style: square;
+    margin-left: 10px;
+ }
+ .school_list li{
+    float: left;
+    width: 180px;
+    color: #227DC5;
+    font-size: 14px;
+    margin: 3px 10px; 
+ }
+ /*********/
+ .bodyb{
+    position: absolute;
+    width: 100%;
+    /* 适当调整这个参数，使其包含住整个页面 */
+    height: 1100px;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+ }

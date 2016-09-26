@@ -1,0 +1,461 @@
+/*** header ***/
+header{
+    height: 100px;
+    background: #bce8f1;
+}
+a{
+    color: #217DC6;
+}
+.nav-bar{
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-bar .logo{
+    float: left;
+    margin-top: 20px;
+    font-size: 50px;
+    color: #217DC6;
+}
+.nav-bar .logo:after{
+    content: "|";
+    margin: 5px;
+    font-weight: lighter;
+    color: #217DC6;
+}
+.nav-bar .schoolBox{
+    width: 150px;
+    float: left;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.navLink{
+    float: left;
+    margin: 40px 5px;
+    font-size: 22px;
+}
+.profile{
+    width: 150px;
+    height: 50px;
+    float: right;
+    text-align: right;
+    line-height: 50px;
+    margin-top: 30px;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+
+/*** main ***/
+.main{
+    width: 80%;
+    margin: 0 auto;
+    /*background: seashell;*/
+}
+
+.main-wrap input, select{
+    height: 40px;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.main-wrap i{
+    float: left;
+    margin: 5px 0;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.main-wrap .ui-button{
+    width: 100px;
+    height: 40px;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: #f0f0f0;
+}
+.rowRight .err-text{
+    width: 200px;
+    height: 30px;
+    display: none;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    /*background: lightcoral;*/
+}
+.err-text i{
+    font-size: 14px;
+    line-height: 30px;
+    color: darkred;
+}
+
+/** main-wrap titleBar **/
+.main-wrap .titleBar{
+    height: 30px;
+    margin: 15px 0;
+}
+.titleBar .titleIcon{
+    width: 3px;
+    height: 100%;
+    float: left;
+    background: #217DC6;
+}
+.titleBar span{
+    margin-left: 10px;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+/** 各项综合设置 **/
+.main-wrap .divRow{
+    margin-bottom: 20px;
+}
+.divRow .rowLeft{
+    width: 120px;
+    line-height: 40px;
+    text-align: right;
+    float: left;
+}
+.divRow .rowRight{
+    margin-left: 150px;
+}
+
+/*** 单项设置 ***/
+
+/*** 社团名称 ***/
+.com-Name i{
+    clear: left;
+}
+.com-Name .err-text{
+    margin-top: -40px;
+}
+
+/** 社团头像 **/
+
+/*** 提交头像页面1 ***/
+.com-Img .imgLoad{
+    display: block;
+}
+.imgLoad #img-comImg1{
+    background-image: url("../image/img3.jpg") ;
+    background-size:cover;
+    width: 150px;
+    height: 150px;
+}
+.imgLoad .imgSmall{
+    border-radius: 50%;
+}
+
+/*** 提交头像页面2 ***/
+.com-Img .imgUpload{
+    display: none;
+    position: relative;
+    /*background: skyblue;*/
+    height: 300px;
+}
+.com-Img .imgUpload .upLoad{
+    float: left;
+    height: 300px;
+}
+.com-Img .imgUpload .upLoad a{
+    display:inline-block;
+    width:100px;
+    height:40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background:#f0f0f0;
+    position:absolute;
+    bottom: 30px;
+    overflow:hidden;
+    text-align: center;
+    color: #000;
+    line-height: 40px;
+}
+.com-Img .imgUpload .upLoad input{
+    position:absolute;
+    right:0; top:0;
+    font-size:100px;
+    opacity:0; filter:alpha(opacity=0);
+}
+
+.com-Img .imgUpload .upLoad .imgBig{
+    position: relative;
+}
+/************************************/
+.com-Img .imgUpload .imgSave{
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+.imgSave #img3{
+    display: none;
+}
+
+.com-Img .imgUpload #btn-saveImg{
+   position: absolute;
+    top: 230px;
+}
+   /******/
+
+
+.imgUpload .cutBox{display:none;position: absolute;width: 150px;height: 150px;border:1px solid #fff;z-index: 2;cursor: move}
+.imgUpload .minDiv{width:8px;height:8px;background: #ccc;font-size: 0;position: absolute;z-index: 2;}
+.imgUpload .minDiv.left-up{top:-4px;left: -4px;cursor:nw-resize;}
+.imgUpload .minDiv.left{top:50%;margin-top:-4px;left: -4px;cursor:e-resize;}
+.imgUpload .minDiv.left-down{bottom:-4px;left: -4px;cursor:sw-resize;}
+.imgUpload .minDiv.top{top:-4px;left: 50%;margin-left:-4px;cursor:n-resize;}
+.imgUpload .minDiv.right-up{top:-4px;right: -4px;cursor:ne-resize;}
+.imgUpload .minDiv.right{top:50%;margin-top:-4px;right: -4px;cursor:e-resize;}
+.imgUpload .minDiv.right-down{bottom:-4px;right: -4px;cursor:se-resize;}
+.imgUpload .minDiv.bottom{bottom:-4px;left: 50%;margin-left:-4px;cursor:s-resize;}
+
+.imgUpload img{position: absolute;z-index: 1}
+.imgUpload .imgBig .img1{opacity: 0.5;border:1px solid #000}
+.imgUpload .img2{clip:rect(10px 151px 161px 0px);z-index: 2}
+
+
+/*** 社团属性 ***/
+.com-Att .check{
+    height: 40px;
+    width:100px;
+    line-height: 40px;
+    float: left;
+
+}
+
+
+/** 社团类别 **/
+.schoolRow select{
+    width: 120px;
+}
+
+
+/*** 选择学校 ***/
+/**********school_select*************/
+.school_sel{
+    position: relative;
+    /* 修改这个top值，控制弹出框的位置 */
+     top: 600px;
+    left:308px;
+    width: 650px;
+    height: 450px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    -webkit-box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2) ;
+    -moz-box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2) ;
+    -o-box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2) ;
+    box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2) ;
+}
+.school_sel h1{
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.school_sel .close{
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.school_sel p{
+    margin: 20px 0 10px 0;
+}
+.school_sel p input,.school_sel p select{
+    height: 30px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.school_sel p input{
+    width: 300px;
+}
+.school_sel .hidden{
+    position: absolute;
+    left: 249px;
+    top: 110px;
+    width: 305px;
+    height: 250px;
+    overflow-y:auto;
+    z-index: 10;
+    display: none;
+    border: 1px solid #ccc;
+    border-top:none;
+    background-color: white;
+    font-size: 14px;
+}
+.item{
+    margin-bottom: 5px;
+    padding-left: 5px;
+    color: #A9A9A9;
+}
+.item:hover
+{
+    background-color: gray;
+    cursor:pointer;
+}
+.school_sel p select{
+    width: 100px;
+}
+.school_sel li{
+    cursor: pointer;
+}
+.school_list{
+    border: 1px solid #ccc;
+    width: 650px;
+    height: 300px;
+    overflow-y: auto;
+}
+.school_list ul{
+    list-style: square;
+    margin-left: 10px;
+}
+.school_list li{
+    float: left;
+    width: 180px;
+    color: #227DC5;
+    font-size: 14px;
+    margin: 3px 10px;
+}
+/*********/
+.bodyb{
+    position: absolute;
+    width: 100%;
+    /* 适当调整这个参数，使其包含住整个页面 */
+    height: 1750px;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+/*** 短信验证 ***/
+.com-Code #btn-getCode{
+    font-size: 10px;
+}
+
+/** 身份核验 **/
+.com-Check .rowRight .imgBox{
+    float: left;
+}
+.com-Check .rowRight .stuCardBtnBox{
+    margin-left: 120px;
+    bottom: 0;
+}
+.com-Check .rowRight a{
+    display:inline-block;
+    width:100px;
+    height:40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background:#f0f0f0;
+    position:relative;
+    overflow:hidden;
+    text-align: center;
+    color: #000;
+    line-height: 40px;
+}
+.com-Check .rowRight input{
+    position:absolute;
+    right:0; top:0;
+    font-size:100px;
+    opacity:0; filter:alpha(opacity=0);
+}
+
+
+
+/** 提交 **/
+.submit .blue-button{
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 22px;
+    color: #fff;
+    background: #217DC6;
+}
+
+
+
+/*** footer ***/
+footer{
+    height: 200px;
+    border-top: 1px solid #ccc;
+    background: #f0f0f0;
+}
+
+footer .footer-bar{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.footer-bar .footer-Item{
+    width: 200px;
+    float: left;
+    text-align: left;
+}
+.footer-Item a{
+    display: inline-block;
+    margin-top: 5px;
+}
+.footer-bar .footer-copytight{
+    width: 150px;
+    float: right;
+    text-align: right;
+    font-size: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

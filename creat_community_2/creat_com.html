@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>creat_com</title>
+    <link href="css/creat_com_css.css" rel="stylesheet" type="text/css">
+    <link href="css/public.css" type="text/css" rel="stylesheet">
+    <style>
+        @media screen and (max-width:1148px){
+            .nav-bar{
+                width: 910px;
+            }
+            .main{
+                width: 800px;
+            }
+            .footer-bar{
+                width: 750px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<!-- header -->
+<header>
+    <div class="nav-bar">
+        <div class="logo"><a href="#">Undact</a></div>
+        <div class="schoolBox">
+            <span>XXX大学</span><br>
+            <a href="javascript:;" class="schoolChoose">【更改学校】</a>
+        </div>
+        <div class="profile">
+            <a href="javascript:;" target="_blank"  class="userImg"><img src="image/xxx1.jpeg"/></a>
+            <a href="javascript:;" id="profileBtn">Hi!王晓明</a>
+        </div>
+        <a href="javascript:;" class="navLink">校内活动</a>
+        <a href="javascript:;" class="navLink">我要发布活动</a>
+        <a href="javascript:;" class="navLink">去其他学校看看</a>
+    </div>
+
+
+</header>
+
+<!-- main -->
+<div class="main">
+    <div class="main-wrap">
+        <div class="titleBar">
+            <div class="titleIcon"></div>
+            <span>创建社团</span>
+        </div>
+        <div class="divRow com-Name clearfix" style="margin-top:30px;">
+            <span class="rowLeft">社团名称</span>
+            <div class="rowRight">
+                <input type="text" id="input-comName" class="mustFill" value=""/><br>
+                <i>社团名称需包含学校名称（或简称）</i>
+                <span class="err-text com-Name-err"></span>
+            </div>
+        </div>
+
+        <div class="divRow com-Img clearfix">
+            <span class="rowLeft">社团头像</span>
+            <div class="rowRight">
+                <div class='imgLoad clearfix'>
+                    <div class="imgSmall" id="img-comImg1" width="150" height="150" name="before"></div>
+                    <button class="avatarBtn ui-button gray-button small-button" id="btn-uploadBtn1" style="margin: 20px">上传头像</button>
+                </div>
+                <div class="imgUpload clearfix">
+                    <div id="upLoad" class="upLoad clearfix">
+                        <div class="imgBig clearfix">
+                            <img id="img1" class="img1" height="200" src="image/com_img_into.png" style="display:block"/>
+                            <img id="img2" class="img2" height="200" src=""/>
+                            <div class="cutBox" id="cutBox">
+                                <div id="left-up" class="minDiv left-up"></div>
+                                <div id="left" class="minDiv left"></div>
+                                <div id="left-down" class="minDiv left-down"></div>
+                                <div id="up" class="minDiv top"></div>
+                                <div id="right-up" class="minDiv right-up"></div>
+                                <div id="right" class="minDiv right"></div>
+                                <div id="right-down" class="minDiv right-down"></div>
+                                <div id="down" class="minDiv bottom"></div>
+                            </div>
+                        </div>
+                        <form action="http://localhost:8080/undactweb/controll/imageCutFileUpload" name="creAct" id="imgFile1" method="post" target="frameFile1" encType="multipart/form-data">
+                            <iframe id="frameFile1" name="frameFile1" style="display: none"></iframe>
+                            <a href="javascript:;" ><input type="file" name="file1" class="ui-button small-button" id="btn-uploadBtn2">点此上传</a>
+                        </form>
+                    </div>
+                    <div class="imgSave clearfix">
+                        <div class="imgSmall"  >
+                            <!--<img id="img3" class="img3" height="200" src=""/>-->
+                        </div><br><br>
+                        <button class="avatarBtn ui-button gray-button small-button" id="btn-saveImg">保 存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divRow com-Att clearfix">
+            <span class="rowLeft">社团属性</span>
+            <div class="rowRight">
+                <div class="check"><input type="radio" class="commProperty" name="commProperty" checked><label>校级组织</label></div>
+                <div class="check"><input type="radio" class="commProperty" name="commProperty"><label>院级组织</label></div>
+            </div>
+        </div>
+        <div class="divRow schoolRow clearfix">
+            <span class="rowLeft">所在学校</span>
+            <div class="rowRight">
+                <input type="text" id="input-comSchool">
+                <button class="schoolBtn ui-button gray-button small-button" id="btn-schoolCho" style="margin-left:10px">选择学校</button>
+                <span class="err-text com-School-err"></span>
+            </div>
+
+        </div>
+        <div class="divRow schoolRow clearfix">
+            <span class="rowLeft">社团类别</span>
+            <div class="rowRight">
+                <select id="input-comClass1">
+                    <option>专业学术</option>
+                    <option>文化娱乐</option>
+                    <option>体育健身</option>
+                    <option>社会公益</option>
+                    <option>职业实践</option>
+                    <option>团学组织</option>
+                </select>
+                <select id="input-comClass2" style="margin-left:10px">
+                    <option>自然科学</option>
+                    <option>信息科技</option>
+                    <option>法律研究</option>
+                    <option>天文地理</option>
+                    <option>历史研究</option>
+                    <option>经济管理</option>
+                    <option>文学研究</option>
+                    <option>媒体传播</option>
+                    <option>哲学理论</option>
+                    <option>军事国防</option>
+                    <option>外语学习</option>
+                    <option>工程技术</option>
+                    <option>其他</option>
+                </select>
+            </div>
+        </div>
+        <div style="width:90%; height:1px; margin:30px 0; background: #f0f0f0"></div>
+        <div class="divRow com-Phone clearfix">
+            <span class="rowLeft">手机号码</span>
+            <div class="rowRight">
+                <input type="text" id="input-phone" value="" maxlength="11" class="mustFill keyDownFill formPhone"/>
+                <span class="err-text com-Phone-err"></span>
+            </div>
+        </div>
+        <div class="divRow com-Code clearfix">
+            <span class="rowLeft">短信验证</span>
+            <div class="rowRight">
+                <input type="text" id="input-MsgCode" value="" maxlength="6" class="mustFill keyDownFill" style="width:98px;"/>
+                <button class="sendMsgBtn ui-button gray-button small-button" id="btn-getCode" style="margin-left:10px">获取验证码</button>
+                <span class="err-text com-Code-err"></span>
+            </div>
+        </div>
+        <div class="divRow com-Check clearfix">
+            <span class="rowLeft">身份核验</span>
+            <div class="rowRight">
+                <div class="imgBox" id="egImgBox"><img class="egImg" id="img-comIdCheck" width="100" height="150" src="image/idcheck.png"/></div>
+                <div class="stuCardBtnBox">
+                    <span class="tips stuCardTips"><i>请按示例上传身份证与学生证照片<br>信息须清晰可见<br>我们会严格保护您的隐私</i></span><br><br><br>
+                    <form action="http://localhost:8080/undactweb/controll/imageCutFileUpload" name="creAct" id="imgFile2" method="post" target="frameFile2" encType="multipart/form-data">
+                        <iframe id="frameFile2" name="frameFile2" style="display: none"></iframe>
+                        <a><input type="file" name="file1" class="stuCardBtn ui-button gray-button small-button" id="btn-uploadBtn3">上传图片</a>
+                    </form>
+                </div>
+                <span class="err-text com-Check-err"></span>
+            </div>
+        </div>
+        <div class="divRow submit clearfix">
+        <span class="rowLeft"></span>
+        <div class="rowRight">
+            <button class="submitBtn ui-button blue-button" id="submitBtn">提  交</button>
+            <span class="err-text com-Sub"></span>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="footer-bar">
+        <div class="footer-Item">
+            <h3>合作</h3><br>
+            <a href="javascript:;" target="_blank">关于我们</a><br>
+            <a href="javascript:;" target="_blank">联系我们</a><br>
+            <a href="javascript:;" target="_blank">加入我们</a>
+        </div>
+        <div class="footer-Item">
+            <h3>帮助</h3><br>
+            <a href="javascript:;" target="_blank">侵权申诉</a><br>
+            <a href="javascript:;" target="_blank">用户协议</a><br>
+            <a href="javascript:;" target="_blank">意见反馈</a>
+        </div>
+        <div class="footer-Item">
+            <h3>官方</h3><br>
+            <a href="javascript:;" target="_blank">微信</a><br>
+            <a href="javascript:;" target="_blank">主页</a><br>
+            <a href="javascript:;" target="_blank">新浪微博</a><br>
+            <a href="javascript:;" target="_blank">招聘</a>
+        </div>
+        <div class="footer-copytight">
+            <span>X网文XXXXXXX号</span><br>
+            <span>XICP证XXXXXXX</span><br>
+            <span>Undact&copy;2016</span><br>
+            <span><a href="#" id="lawInfo">法律声明</a></span>
+        </div>
+    </div>
+</footer>
+
+
+<div id="bodyb" class="bodyb">
+    <div class="school_sel" id="school_sel">
+        <span class="close" id="close">×</span>
+        <h1>选择学校</h1>
+        <p>
+            <select>
+                <option>中国</option>
+            </select>
+            <select id="citys">
+            </select>
+            <input type="text" name="search" id="searchs" placeholder="快速查找学校">
+        </p>
+        <div class="hidden" id="txt"></div>
+        <div class="school_list">
+            <ul id="schools_lists">
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script src="js/creat_com_js.js"></script>
+<script src="js/ajaxt.js"></script>
+<script src="js/schoolSel.js"></script>
+</body>
+</html>
